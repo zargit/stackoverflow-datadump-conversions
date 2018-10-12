@@ -17,6 +17,15 @@ It has the following tables -
 * comments - (https://archive.org/download/stackexchange/stackoverflow.com-Comments.7z)
 * votes - (https://archive.org/download/stackexchange/stackoverflow.com-Votes.7z)
 
+After extracting the files into xml, the first two line and the last line must be removed before running the script.
+
+In linux console the following will remove the the above mentioned lines - 
+
+[For first 2 lines]$> sed -i '1,2d' filename
+[For the last line]$> sed -i '$d' filename
+
+Both operation will take good amount of time due to their emense size.
+
 """
 
 
